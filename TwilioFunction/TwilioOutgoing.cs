@@ -41,8 +41,8 @@ namespace TwilioFunctions
             //Init Twilio
             TwilioClient.Init(accountSid, authToken);
 
-            PhoneNumber to = new PhoneNumber(fromNumber);
-            PhoneNumber from = new PhoneNumber(number);
+            PhoneNumber to = new PhoneNumber(number);
+            PhoneNumber from = new PhoneNumber(fromNumber);
             var call = CallResource.Create(to, from,
                 url: new Uri("http://demo.twilio.com/docs/voice.xml"));
 
