@@ -1,2 +1,5 @@
 # OutgoingPhoneCall
-Using Twilio to initate an outbound phone call
+
+Azure function code.
+
+Simplying using Twilio to initate an outbound phone call.
