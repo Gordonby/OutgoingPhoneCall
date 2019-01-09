@@ -31,6 +31,8 @@ namespace TwilioFunctions
             dynamic data = JsonConvert.DeserializeObject(requestBody);
             number = number ?? data?.number;
 
+            log.LogInformation(number);
+
             //Get Twilio account specific info from Environment Variables
             string accountSid = Environment.GetEnvironmentVariable("TwilioAccountSID");
             string authToken = Environment.GetEnvironmentVariable("TwilioAuthToken");
